@@ -3,13 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <title>Altan Celep | Link in Bio</title>
+
+<meta name="description" content="Altan Celep resmi bağlantı sayfası. Sosyal medya hesapları, iletişim ve iş birliği bilgileri.">
 <link rel="canonical" href="https://altancelep.com.tr/">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Altan Celep">
+<meta property="og:description" content="Sağlık Çalışanı • Dijital İçerik Üreticisi">
+<meta property="og:image" content="https://altancelep.com.tr/profil.jpeg">
+<meta property="og:url" content="https://altancelep.com.tr/">
+<meta property="og:type" content="website">
 
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-<!-- Font Awesome Icons -->
+<!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
 <!-- Google Analytics -->
@@ -32,9 +42,7 @@ function trackClick(name){
   --text:#e5e7eb;
   --accent:#38bdf8;
 }
-
 *{box-sizing:border-box}
-
 body{
   margin:0;
   min-height:100vh;
@@ -45,7 +53,6 @@ body{
   justify-content:center;
   align-items:center;
 }
-
 .card{
   width:100%;
   max-width:420px;
@@ -55,7 +62,6 @@ body{
   text-align:center;
   box-shadow:0 20px 40px rgba(0,0,0,.4);
 }
-
 .profile{
   width:140px;
   height:140px;
@@ -64,23 +70,14 @@ body{
   padding:4px;
   background:radial-gradient(circle,var(--accent),transparent 70%);
 }
-
 .profile img{
   width:100%;
   height:100%;
   border-radius:50%;
   object-fit:cover;
 }
-
-h1{
-  margin:16px 0 4px;
-}
-
-.subtitle{
-  font-size:14px;
-  opacity:.8;
-}
-
+h1{margin:16px 0 4px}
+.subtitle{font-size:14px;opacity:.8}
 .banner{
   margin:16px 0;
   padding:10px;
@@ -88,13 +85,11 @@ h1{
   background:rgba(56,189,248,.15);
   font-size:14px;
 }
-
 .icons{
   display:flex;
   justify-content:space-between;
   margin:24px 0;
 }
-
 .icon-btn{
   width:70px;
   height:70px;
@@ -108,13 +103,11 @@ h1{
   text-decoration:none;
   font-size:22px;
 }
-
 .icon-btn span{
   font-size:12px;
   margin-top:4px;
   opacity:.8;
 }
-
 .buttons a{
   display:flex;
   align-items:center;
@@ -128,7 +121,6 @@ h1{
   text-decoration:none;
   font-weight:600;
 }
-
 .buttons a.secondary{
   background:#020617;
   color:#e5e7eb;
@@ -138,10 +130,8 @@ h1{
 </head>
 
 <body>
-
 <div class="card">
 
-  <!-- Profil -->
   <div class="profile">
     <img src="profil.jpeg" alt="Altan Celep">
   </div>
@@ -149,60 +139,32 @@ h1{
   <h1>Altan Celep</h1>
   <div class="subtitle">Sağlık Çalışanı • Dijital İçerik Üreticisi</div>
 
-  <!-- İş Birliği Banner -->
-  <div class="banner">
-    🤝 İş birlikleri için iletişime geçebilirsiniz
-  </div>
+  <div class="banner">🤝 İş birlikleri için iletişime geçebilirsiniz</div>
 
-  <!-- Sosyal İkonlar -->
   <div class="icons">
-    <a class="icon-btn" href="https://www.instagram.com/altancelep61" target="_blank"
-       onclick="trackClick('Instagram')">
-      <i class="fa-brands fa-instagram"></i>
-      <span>531</span>
+    <a class="icon-btn" href="https://www.instagram.com/altancelep61" target="_blank" onclick="trackClick('Instagram')">
+      <i class="fa-brands fa-instagram"></i><span>531</span>
     </a>
-
-    <a class="icon-btn" href="https://www.tiktok.com/@altancelep61" target="_blank"
-       onclick="trackClick('TikTok')">
-      <i class="fa-brands fa-tiktok"></i>
-      <span>47</span>
+    <a class="icon-btn" href="https://www.tiktok.com/@altancelep61" target="_blank" onclick="trackClick('TikTok')">
+      <i class="fa-brands fa-tiktok"></i><span>47</span>
     </a>
-
-    <a class="icon-btn" href="https://www.facebook.com/altan.celep.2025/" target="_blank"
-       onclick="trackClick('Facebook')">
-      <i class="fa-brands fa-facebook-f"></i>
-      <span>FB</span>
+    <a class="icon-btn" href="https://www.facebook.com/altan.celep.2025/" target="_blank" onclick="trackClick('Facebook')">
+      <i class="fa-brands fa-facebook-f"></i><span>FB</span>
     </a>
   </div>
 
-  <!-- Aksiyon Butonları -->
   <div class="buttons">
-    <a href="https://wa.me/905376313018?text=Merhaba"
-       onclick="trackClick('WhatsApp')" target="_blank">
+    <a href="https://wa.me/905376313018?text=Merhaba" target="_blank" onclick="trackClick('WhatsApp')">
       <i class="fa-brands fa-whatsapp"></i> WhatsApp
     </a>
-
-    <a href="mailto:altan.celep@gmail.com"
-       class="secondary" onclick="trackClick('Mail')">
+    <a href="mailto:altan.celep@gmail.com" class="secondary" onclick="trackClick('Mail')">
       <i class="fa-solid fa-envelope"></i> Mail Gönder
     </a>
-
-    <a href="Altan_Celep_Media_Kit_TR_EN.pdf"
-       class="secondary" onclick="trackClick('MediaKit')" target="_blank">
+    <a href="Altan_Celep_Media_Kit_TR_EN.pdf" class="secondary" target="_blank" onclick="trackClick('MediaKit')">
       <i class="fa-solid fa-file-pdf"></i> Media Kit (PDF)
     </a>
   </div>
 
 </div>
-
 </body>
 </html>
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://altancelep.com.tr/</loc>
-    <lastmod>2025-12-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-</urlset>
