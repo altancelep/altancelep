@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Altan Celep | Link in Bio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-42C2BD2JTD"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-42C2BD2JTD');
+
+function trackClick(name){
+  gtag('event','icon_click',{icon:name});
+}
+</script>
+
+<style>
+:root {
+  --bg:#020617;
+  --card:#0f172a;
+  --text:#e5e7eb;
+  --accent:#38bdf8;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  min-height:100vh;
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Inter',sans-serif;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.card{
+  width:100%;
+  max-width:420px;
+  background:var(--card);
+  padding:32px;
+  border-radius:22px;
+  text-align:center;
+  box-shadow:0 20px 40px rgba(0,0,0,.4);
+}
+
+.profile{
+  width:140px;
+  height:140px;
+  margin:auto;
+  border-radius:50%;
+  padding:4px;
+  background:radial-gradient(circle,var(--accent),transparent 70%);
+}
+
+.profile img{
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+h1{
+  margin:16px 0 4px;
+}
+
+.subtitle{
+  font-size:14px;
+  opacity:.8;
+}
+
+.banner{
+  margin:16px 0;
+  padding:10px;
+  border-radius:12px;
+  background:rgba(56,189,248,.15);
+  font-size:14px;
+}
+
+.icons{
+  display:flex;
+  justify-content:space-between;
+  margin:24px 0;
+}
+
+.icon-btn{
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  background:#020617;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  text-decoration:none;
+  font-size:22px;
+}
+
+.icon-btn span{
+  font-size:12px;
+  margin-top:4px;
+  opacity:.8;
+}
+
+.buttons a{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  margin-top:12px;
+  padding:14px;
+  border-radius:999px;
+  background:linear-gradient(135deg,#38bdf8,#0ea5e9);
+  color:#020617;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.buttons a.secondary{
+  background:#020617;
+  color:#e5e7eb;
+  border:1px solid #1e293b;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <!-- Profil -->
+  <div class="profile">
+    <img src="profil.jpeg" alt="Altan Celep">
+  </div>
+
+  <h1>Altan Celep</h1>
+  <div class="subtitle">Sağlık Çalışanı • Dijital İçerik Üreticisi</div>
+
+  <!-- İş Birliği Banner -->
+  <div class="banner">
+    🤝 İş birlikleri için iletişime geçebilirsiniz
+  </div>
+
+  <!-- Sosyal İkonlar -->
+  <div class="icons">
+    <a class="icon-btn" href="https://www.instagram.com/altancelep61" target="_blank"
+       onclick="trackClick('Instagram')">
+      <i class="fa-brands fa-instagram"></i>
+      <span>531</span>
+    </a>
+
+    <a class="icon-btn" href="https://www.tiktok.com/@altancelep61" target="_blank"
+       onclick="trackClick('TikTok')">
+      <i class="fa-brands fa-tiktok"></i>
+      <span>47</span>
+    </a>
+
+    <a class="icon-btn" href="https://www.facebook.com/altan.celep.2025/" target="_blank"
+       onclick="trackClick('Facebook')">
+      <i class="fa-brands fa-facebook-f"></i>
+      <span>FB</span>
+    </a>
+  </div>
+
+  <!-- Aksiyon Butonları -->
+  <div class="buttons">
+    <a href="https://wa.me/905376313018?text=Merhaba%20ben%20Altan"
+       onclick="trackClick('WhatsApp')" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i> WhatsApp
+    </a>
+
+    <a href="mailto:altan.celep@gmail.com"
+       class="secondary" onclick="trackClick('Mail')">
+      <i class="fa-solid fa-envelope"></i> Mail Gönder
+    </a>
+
+    <a href="Altan_Celep_Media_Kit_TR_EN.pdf"
+       class="secondary" onclick="trackClick('MediaKit')" target="_blank">
+      <i class="fa-solid fa-file-pdf"></i> Media Kit (PDF)
+    </a>
+  </div>
+
+</div>
+
+</body>
+</html>
