@@ -2,210 +2,147 @@
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
-<title>Altan Celep | Link in Bio</title>
-
-<meta name="description" content="Altan Celep resmi bağlantı sayfası. Sosyal medya hesapları, iletişim ve iş birliği bilgileri.">
-<link rel="canonical" href="https://altancelep.com.tr/">
-
+<title>Altan Celep</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Open Graph -->
-<meta property="og:title" content="Altan Celep">
-<meta property="og:description" content="Sağlık Çalışanı • Dijital İçerik Üreticisi">
-<meta property="og:image" content="https://altancelep.com.tr/profil.jpeg">
-<meta property="og:url" content="https://altancelep.com.tr/">
-<meta property="og:type" content="website">
-
-<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-42C2BD2JTD"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-42C2BD2JTD');
-
-function trackClick(name){
-  gtag('event','icon_click',{icon:name});
-}
-</script>
 
 <style>
 :root {
-  --bg:#020617;
-  --card:#0f172a;
-  --text:#e5e7eb;
-  --accent:#38bdf8;
+  --bg-dark: #020617;
+  --bg-light: #f1f5f9;
+  --card-dark: #0f172a;
+  --card-light: #ffffff;
+  --text-dark: #e5e7eb;
+  --text-light: #020617;
+  --accent: #38bdf8;
 }
 
-*{box-sizing:border-box}
-
-body{
-  margin:0;
-  min-height:100vh;
-  background:var(--bg);
-  color:var(--text);
-  font-family:'Inter',sans-serif;
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg-dark);
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  transition: 0.3s;
 }
 
-/* Kart tasarımı */
-.card{
-  width:100%;
-  max-width:420px;
-  background:var(--card);
-  padding:32px;
-  border-radius:22px;
-  text-align:center;
-  margin:40px auto 0;
-  box-shadow:0 20px 40px rgba(0,0,0,.4);
+body.light {
+  background: var(--bg-light);
+  color: var(--text-light);
 }
 
-.profile{
-  width:140px;
-  height:140px;
-  margin:auto;
-  border-radius:50%;
-  padding:4px;
-  background:radial-gradient(circle,var(--accent),transparent 70%);
-}
-.profile img{
-  width:100%;
-  height:100%;
-  border-radius:50%;
-  object-fit:cover;
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--card-dark);
+  border-radius: 20px;
+  padding: 32px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
 
-h1{margin:16px 0 4px}
-.subtitle{font-size:14px;opacity:.8}
-
-.banner{
-  margin:16px 0;
-  padding:10px;
-  border-radius:12px;
-  background:rgba(56,189,248,.15);
-  font-size:14px;
+body.light .card {
+  background: var(--card-light);
 }
 
-.icons{
-  display:flex;
-  justify-content:space-between;
-  margin:24px 0;
-}
-.icon-btn{
-  width:70px;
-  height:70px;
-  border-radius:50%;
-  background:#020617;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  color:white;
-  text-decoration:none;
-  font-size:22px;
-}
-.icon-btn span{
-  font-size:12px;
-  margin-top:4px;
-  opacity:.8;
+img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid var(--accent);
+  object-fit: cover;
 }
 
-.buttons{
-  display:flex;
-  flex-direction:column;
-  gap:12px;
-}
-.buttons a{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:10px;
-  padding:14px;
-  border-radius:999px;
-  background:linear-gradient(135deg,#38bdf8,#0ea5e9);
-  color:#020617;
-  text-decoration:none;
-  font-weight:600;
-}
-.buttons a.secondary{
-  background:#020617;
-  color:#e5e7eb;
-  border:1px solid #1e293b;
+h1 {
+  margin: 16px 0 6px;
 }
 
-/* Footer CSS */
-.site-footer{
-  margin:24px auto;
-  padding-top:16px;
-  border-top:1px solid #1e293b;
-  font-size:12px;
-  line-height:1.6;
-  opacity:.65;
-  max-width:420px;
-  text-align:center;
-  word-break: break-word; /* uzun metinleri taşırmaz */
+.subtitle {
+  font-size: 14px;
+  opacity: 0.8;
 }
-.site-footer p{
-  margin:4px 0;
+
+.about {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.info {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 14px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #020617;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.links a.tiktok {
+  background: linear-gradient(135deg, #25F4EE, #FE2C55);
+  color: #020617;
+}
+
+.toggle {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  font-size: 22px;
+  cursor: pointer;
 }
 </style>
 </head>
 
 <body>
 
-<!-- Kart -->
-<div class="card">
+<div class="toggle" onclick="toggleMode()">🌙</div>
 
-  <div class="profile">
-    <img src="profil.jpeg" alt="Altan Celep">
-  </div>
+<div class="card">
+  <img src="profil.jpeg" alt="Altan Celep">
 
   <h1>Altan Celep</h1>
   <div class="subtitle">Sağlık Çalışanı • Dijital İçerik Üreticisi</div>
 
-  <div class="banner">🤝 İş birlikleri için iletişime geçebilirsiniz</div>
+  <p class="about">
+    Trabzon’da yaşayan, Kanuni Eğitim ve Araştırma Hastanesi’nde görev yapan
+    bir sağlık çalışanıyım. Mesleki hayatımın yanında sosyal medyada
+    üretmeye ve paylaşmaya devam ediyorum.
+  </p>
 
-  <div class="icons">
-    <a class="icon-btn" href="https://www.instagram.com/altancelep61" target="_blank" onclick="trackClick('Instagram')">
-      <i class="fa-brands fa-instagram"></i><span>531</span>
-    </a>
-    <a class="icon-btn" href="https://www.tiktok.com/@altancelep61" target="_blank" onclick="trackClick('TikTok')">
-      <i class="fa-brands fa-tiktok"></i><span>47</span>
-    </a>
-    <a class="icon-btn" href="https://www.facebook.com/altan.celep.2025/" target="_blank" onclick="trackClick('Facebook')">
-      <i class="fa-brands fa-facebook-f"></i><span>FB</span>
-    </a>
+  <div class="info">
+    📍 Trabzon <br>
+    🏥 Kanuni Eğitim ve Araştırma Hastanesi <br>
+    🎬 Kısa video formatında, günlük yaşam ve iş ortamından samimi içerikler
+    üreten dijital içerik üreticisiyim.
   </div>
 
-  <div class="buttons">
-    <a href="https://wa.me/905376313018?text=Merhaba" target="_blank" onclick="trackClick('WhatsApp')">
-      <i class="fa-brands fa-whatsapp"></i> WhatsApp
-    </a>
-    <a href="mailto:altan.celep@gmail.com" class="secondary" onclick="trackClick('Mail')">
-      <i class="fa-solid fa-envelope"></i> Mail Gönder
-    </a>
-    <a href="Altan_Celep_Media_Kit_TR_EN.pdf" class="secondary" target="_blank" onclick="trackClick('MediaKit')">
-      <i class="fa-solid fa-file-pdf"></i> Media Kit (PDF)
-    </a>
+  <div class="links">
+    <a href="https://www.instagram.com/altancelep61" target="_blank">📸 Instagram</a>
+    <a href="https://www.facebook.com/altan.celep.2025/" target="_blank">👍 Facebook</a>
+    <a href="https://www.tiktok.com/@altancelep61" target="_blank" class="tiktok">🎵 TikTok</a>
   </div>
-
 </div>
 
-<!-- Footer -->
-<footer class="site-footer" itemscope itemtype="https://schema.org/Person">
-  <p>
-    <strong itemprop="name">Altan Celep</strong> —
-    <span itemprop="jobTitle">Sağlık Çalışanı & Dijital İçerik Üreticisi</span>
-  </p>
-  <p>
-    Sosyal medya, iş birlikleri ve iletişim bağlantıları.
-  </p>
-</footer>
+<script>
+function toggleMode() {
+  document.body.classList.toggle("light");
+}
+</script>
 
 </body>
 </html>
