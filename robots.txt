@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://altancelep.com.tr/sitemap.xml
